@@ -1,0 +1,22 @@
+<div class="transfer-form-container">
+  <h2>Agendar Nova Transferência</h2>
+  <form (ngSubmit)="onSubmit()">
+    <div class="form-group">
+      <label for="contaOrigem">Conta de Origem:</label>
+      <input type="text" id="contaOrigem" [(ngModel)]="transfer.contaOrigem" name="contaOrigem" required>
+    </div>
+    <div class="form-group">
+      <label for="contaDestino">Conta de Destino:</label>
+      <input type="text" id="contaDestino" [(ngModel)]="transfer.contaDestino" name="contaDestino" required>
+    </div>
+    <div class="form-group">
+      <label for="valorTransferencia">Valor da Transferência:</label>
+      <input type="number" id="valorTransferencia" [(ngModel)]="transfer.valorTransferencia" name="valorTransferencia" step="0.01" required>
+    </div>
+    <div class="form-group">
+      <label for="dataTransferencia">Data da Transferência:</label>
+      <input type="date" id="dataTransferencia" [(ngModel)]="transfer.dataTransferencia" name="dataTransferencia" required>
+    </div>
+    <button type="submit">Agendar Transferência</button>
+  </form>
+</div>

@@ -1,0 +1,30 @@
+<div class="transfer-list-container">
+  <h2>Extrato de Transferências Agendadas</h2>
+  <table *ngIf="transfers.length > 0; else noTransfers">
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Conta Origem</th>
+        <th>Conta Destino</th>
+        <th>Valor</th>
+        <th>Taxa</th>
+        <th>Data Transferência</th>
+        <th>Data Agendamento</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let transfer of transfers">
+        <td>{{ transfer.id }}</td>
+        <td>{{ transfer.contaOrigem }}</td>
+        <td>{{ transfer.contaDestino }}</td>
+        <td>{{ transfer.valorTransferencia | currency:'BRL':'symbol':'1.2-2' }}</td>
+        <td>{{ transfer.taxa | currency:'BRL':'symbol':'1.2-2' }}</td>
+        <td>{{ transfer.dataTransferencia }}</td>
+        <td>{{ transfer.dataAgendamento }}</td>
+      </tr>
+    </tbody>
+  </table>
+  <ng-template #noTransfers>
+    <p>Nenhuma transferência agendada ainda.</p>
+  </ng-template>
+</div>
