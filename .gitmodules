@@ -1,0 +1,3 @@
+[submodule "angular-financial-transfer-scheduler"]
+	path = angular-financial-transfer-scheduler
+	url = https://github.com/mariannacrocha/financial-transfer.git
