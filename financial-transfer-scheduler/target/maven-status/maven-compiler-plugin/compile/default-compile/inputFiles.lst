@@ -1,0 +1,5 @@
+/home/ubuntu/financial-transfer-scheduler/src/main/java/com/example/financialtransfer/service/TransferenciaService.java
+/home/ubuntu/financial-transfer-scheduler/src/main/java/com/example/financialtransfer/controller/TransferenciaController.java
+/home/ubuntu/financial-transfer-scheduler/src/main/java/com/example/financialtransfer/FinancialTransferSchedulerApplication.java
+/home/ubuntu/financial-transfer-scheduler/src/main/java/com/example/financialtransfer/repository/TransferenciaRepository.java
+/home/ubuntu/financial-transfer-scheduler/src/main/java/com/example/financialtransfer/model/Transferencia.java

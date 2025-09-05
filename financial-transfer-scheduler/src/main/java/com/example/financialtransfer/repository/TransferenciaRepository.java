@@ -1,0 +1,9 @@
+package com.example.financialtransfer.repository;
+
+import com.example.financialtransfer.model.Transferencia;
+import org.springframework.data.jpa.repository.JpaRepository;
+
+public interface TransferenciaRepository extends JpaRepository<Transferencia, Long> {
+}
+
+

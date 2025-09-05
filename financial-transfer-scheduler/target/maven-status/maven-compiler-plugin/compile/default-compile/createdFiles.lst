@@ -1,0 +1,5 @@
+com/example/financialtransfer/model/Transferencia.class
+com/example/financialtransfer/controller/TransferenciaController.class
+com/example/financialtransfer/repository/TransferenciaRepository.class
+com/example/financialtransfer/service/TransferenciaService.class
+com/example/financialtransfer/FinancialTransferSchedulerApplication.class
